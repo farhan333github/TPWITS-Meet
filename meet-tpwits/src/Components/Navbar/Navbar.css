@@ -1,0 +1,65 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+ul {
+   justify-content: center;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.logout-btn {
+    background-color: #D0742C;       
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: black;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        align-items: flex-start;
+        margin-top: 10%;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ul li a, .logout-btn {
+        width: 100%;
+        text-align: left;
+    }
+}
